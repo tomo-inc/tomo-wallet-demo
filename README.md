@@ -7,13 +7,13 @@
 
 ## Wallet SDK demo
 
-router: /
+> router: /
 
 introduce: social login, wallet apis
 
 ## Transaction Builder
 
-router: /transaction-buidler
+> router: /transaction-buidler
 
 introduce: swap, bridge transaction builder
 
