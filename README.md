@@ -1,15 +1,18 @@
 # README
 
 ```
-(p)npm install
-(p)npm dev
+pnpm install
+pnpm dev
 ```
 
 ## Wallet SDK demo
 
+> doc: ./src/social-wallet-demo.md
+
 > router: /
 
 introduce: social login, wallet apis
+
 
 ## Transaction Builder
 
