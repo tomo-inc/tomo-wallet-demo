@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { WagmiProvider } from "wagmi";
 import TransactionBuilder from "./transaction-builder.tsx";
-import { config } from "./config.ts";
+import { config } from "./wagmi-config.ts";
 import "./index.css";
 
 export default function Provider() {
