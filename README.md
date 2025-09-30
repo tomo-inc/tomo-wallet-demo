@@ -5,7 +5,7 @@ pnpm install
 pnpm dev
 ```
 
-## config
+## Config Setup
 1. contact tomo.inc, get config data
 2. setup config.ts
 3. replace import path
