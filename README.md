@@ -5,6 +5,19 @@ pnpm install
 pnpm dev
 ```
 
+## config
+1. contact tomo.inc, get config data
+2. setup config.ts
+3. replace import path
+
+```
+//before
+import { CONFIG } from "./config.test";
+
+//after
+import { CONFIG } from "./config";
+```
+
 ## Wallet SDK demo
 
 > doc: ./src/social-wallet-demo.md
