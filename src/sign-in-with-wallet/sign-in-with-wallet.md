@@ -5,6 +5,7 @@ dapp call wallet api, get signature
 
 ### 1. sign in with ethereum
 doc: https://docs.metamask.io/wallet/how-to/sign-data/siwe/
+
 example: https://dapp-demo.tomo.inc/solana + metamask(chrome extension)
 
 ```
@@ -45,6 +46,8 @@ const sign = await provider.request({
 });
 ```
 
+
+
 **wallet support**:
 
 1. show siwe message follows the SIWE format
@@ -52,6 +55,7 @@ const sign = await provider.request({
 
 ### 2. sign in with solana
 doc: https://github.com/phantom/sign-in-with-solana
+
 example: https://dapp-demo.tomo.inc/solana + phantom(chrome extension)
 
 ```
@@ -67,6 +71,8 @@ const signInData = {
 };
 const { address, signature, signedMessage } = await provider.signIn(signInData);
 ```
+
+
 
 **wallet support**:
 
