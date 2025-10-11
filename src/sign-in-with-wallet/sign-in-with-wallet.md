@@ -8,6 +8,8 @@ doc: https://docs.metamask.io/wallet/how-to/sign-data/siwe/
 
 example: https://dapp-demo.tomo.inc/evm + metamask(chrome extension)
 
+source code: https://github.com/tomo-inc/dapp-demo/blob/main/src/evm-dapp.js
+
 ```
 const signInData = {
   scheme: "https",
@@ -57,6 +59,8 @@ const sign = await provider.request({
 doc: https://github.com/phantom/sign-in-with-solana
 
 example: https://dapp-demo.tomo.inc/solana + phantom(chrome extension)
+
+source code: https://github.com/tomo-inc/dapp-demo/blob/main/src/solana-dapp.js
 
 ```
 const provider = window.phantom.solana;
