@@ -6,7 +6,7 @@ dapp call wallet api, get signature
 ### 1. sign in with ethereum
 doc: https://docs.metamask.io/wallet/how-to/sign-data/siwe/
 
-example: https://dapp-demo.tomo.inc/solana + metamask(chrome extension)
+example: https://dapp-demo.tomo.inc/evm + metamask(chrome extension)
 
 ```
 const signInData = {
