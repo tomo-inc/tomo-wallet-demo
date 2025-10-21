@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import QRCode from "react-qr-code";
 
-import { CubeConnect, CubeConnectResult, CubeConfig, MfaConfig, TotpInfo } from "@tomo-inc/social-account-sdk";
+import { CubeConfig, CubeConnect, CubeConnectResult, MfaConfig, TotpInfo } from "@tomo-inc/social-account-sdk";
 import { CONFIG } from "./config.test";
 
 export default function CubeConnectDemo({
@@ -18,11 +18,13 @@ export default function CubeConnectDemo({
   useEffect(() => {
     (async () => {
       const config: CubeConfig = {
-        rpId: CONFIG.rpId,
         tomoStage: CONFIG.tomoStage as "dev" | "prod",
         tomoClientId: CONFIG.tomoClientId,
+        oidcToken,
+        name: CONFIG.name,
+        logo: CONFIG.logo,
       };
-      const cubeConnect = await CubeConnect(config, oidcToken);
+      const cubeConnect = await CubeConnect(config);
       setCubeConnect(cubeConnect);
 
       const { cubeAccount, cubeMfa }: any = cubeConnect || {};

@@ -6,8 +6,6 @@ Social login support
 2.  google
 3.  email
 
-
-
 ## 1. Install SDKs
 
 ```typescript
@@ -19,8 +17,6 @@ evm recommend
 ```typescript
 pnpm add viem
 ```
-
-
 
 ## 2. Config Prepare
 
@@ -38,8 +34,6 @@ pnpm add viem
 
 4.  Get as **API Key** as **xClientId**: example `**xk21WDBPTbdJdURTc25YcDNUSEA6FTpgaQ**`
 
-
-
 ### 2.2 Create Google App
 
 ![](./docs/google.png)
@@ -53,8 +47,6 @@ pnpm add viem
     https://social-relay.tomo.inc/google
 
 4.  Get **Client ID** as **googleClientId**: example `123456654321-5da6b2ic7io7odr9jnrldai20046vk4t.apps.googleusercontent.com`
-
-
 
 ### 2.3 Create Tomo App
 
@@ -93,8 +85,6 @@ const tomoAppsConfig = {
 };
 ```
 
-
-
 ## 3. Start Wallet Dev
 
 ### 3.1 Oidc Auth
@@ -127,8 +117,6 @@ const emailCode = "user input form email client"; //should finish in {lifeTime} 
 const oidcToken = `${partialOidcToken}${emailCode}`;
 ```
 
-
-
 ### 3.2 Cube Connect
 
 user register or login, [cube connect demo](./socail-wallet-demo/2-cube-connect.tsx)
@@ -139,11 +127,13 @@ https://${rpId}/.well-known/webauthn：https://passkeys.dev/docs/advanced/relate
 import { CubeConnect, CubeConfig } from "@tomo-inc/social-account-sdk";
 
 const config: CubeConfig = {
-  rpId: "***.****", //top-level domain without port, for share passkey cross apps + webpages
   tomoStage: "dev",
   tomoClientId: "******", //provider by tomo
+  oidcToken,
+  name: productName,
+  logo,
 };
-const cubeConnect = await CubeConnect(config, oidcToken);
+const cubeConnect = await CubeConnect(config);
 
 const { cubeAccount, cubeMfa, cubeExport } = cubeConnect;
 ```
@@ -198,8 +188,6 @@ cubeExport = {
 }
 ```
 
-
-
 ### 3.3 Wallet APIs
 
 wallet: chain list + transaction history [wallet api demo](./socail-wallet-demo/3-wallet-api.tsx)
@@ -219,8 +207,6 @@ tomoWallet = {
 };
 
 ```
-
-
 
 ### 3.4 Account APIs
 

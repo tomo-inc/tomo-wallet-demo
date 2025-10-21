@@ -1,12 +1,11 @@
 export const CONFIG = {
   tomoStage: "dev", //dev, prod
+  name: "Tomo Social Wallet Demo",
+  logo: "https://tomo.inc/favicon.svg",
+
   apiKey: "********",
   apiSecret: "********",
   salt: "********",
-
-  rpId: "******", //website for wallet
-  cubeStage: "gamma", //gamma, prod
-  cubeSalt: "********",
 
   tomoClientId: "********",
   xClientId: "********",

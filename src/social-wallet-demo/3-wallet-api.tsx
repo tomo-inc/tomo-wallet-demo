@@ -1,11 +1,11 @@
 import {
+  ChainTypes,
+  TomoAppConfig,
   TomoWallet,
-  TxTypes,
+  TransactionItem,
   TransactionsParams,
   TransactionsResponse,
-  TransactionItem,
-  TomoAppConfig,
-  ChainTypes,
+  TxTypes,
 } from "@tomo-inc/social-account-sdk";
 import { CONFIG } from "./config.test";
 

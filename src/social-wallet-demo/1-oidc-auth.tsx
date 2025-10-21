@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { OidcAuth, LoginType, EmailLoginResult } from "@tomo-inc/social-account-sdk";
+import { EmailLoginResult, LoginType, OidcAuth } from "@tomo-inc/social-account-sdk";
 import { CONFIG } from "./config.test";
 
 export default function OidcAuthDemo({

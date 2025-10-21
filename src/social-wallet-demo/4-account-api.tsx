@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { formatUnits, fromHex, hexToBigInt, numberToHex, parseUnits, serializeTransaction, toHex } from "viem";
 
-import { SocialAccount, TomoAppConfig, CubeConnectResult } from "@tomo-inc/social-account-sdk";
+import { CubeConnectResult, SocialAccount, TomoAppConfig } from "@tomo-inc/social-account-sdk";
 import { CONFIG } from "./config.test";
 
 export default function AccountApiDemo({ accountData }: { accountData: CubeConnectResult }) {
@@ -33,7 +33,7 @@ export default function AccountApiDemo({ accountData }: { accountData: CubeConne
   return (
     <>
       <h1 className="text-2xl font-bold mt-4">Wallet API:</h1>
-      <div className="bg-gray-100 px-2">
+      <div className="bg-gray-100 p-2">
         <div>address: {address}</div>
         <button
           className="m-2 bg-[#999] p-1"
