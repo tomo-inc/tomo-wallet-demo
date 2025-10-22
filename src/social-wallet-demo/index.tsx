@@ -20,7 +20,7 @@ export default function SocialWalletDemo() {
   }, []);
 
   return (
-    <div>
+    <div className="p-2">
       <div>
         <div>
           <h1 className="text-primary text-2xl font-bold">Social Wallet SDK Demo</h1>

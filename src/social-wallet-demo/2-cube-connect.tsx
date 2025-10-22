@@ -145,7 +145,7 @@ const CreateWalletDemo = ({
               }
             }}
           >
-            create wallet with fido
+            create session with fido
           </button>
         </div>
       )}
@@ -160,7 +160,7 @@ const CreateWalletDemo = ({
               console.log("createSession with totp", mfaInfo);
             }}
           >
-            create wallet with totp
+            create session with totp
           </button>
           <br />
           totp code:{" "}
