@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import QRCode from "react-qr-code";
 
 import { CubeConfig, CubeConnect, CubeConnectResult, MfaConfig, TotpInfo } from "@tomo-inc/social-account-sdk";
-import { CONFIG } from "./config.test";
+import { CONFIG } from "./config";
 
 export default function CubeConnectDemo({
   oidcToken,

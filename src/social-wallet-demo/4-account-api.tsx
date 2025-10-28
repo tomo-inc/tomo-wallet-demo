@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { formatUnits, fromHex, hexToBigInt, numberToHex, parseUnits, serializeTransaction, toHex } from "viem";
 
 import { CubeConnectResult, SocialAccount, TomoAppConfig } from "@tomo-inc/social-account-sdk";
-import { CONFIG } from "./config.test";
+import { CONFIG } from "./config";
 
 export default function AccountApiDemo({ accountData }: { accountData: CubeConnectResult }) {
   const [address, setAddress] = useState("");

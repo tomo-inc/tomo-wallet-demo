@@ -7,7 +7,7 @@ import {
   TransactionsResponse,
   TxTypes,
 } from "@tomo-inc/social-account-sdk";
-import { CONFIG } from "./config.test";
+import { CONFIG } from "./config";
 
 export default function WalletApiDemo({ walletId }: { walletId: string }) {
   const tomoAppConfig: TomoAppConfig = {
