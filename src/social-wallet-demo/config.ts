@@ -1,5 +1,5 @@
 export const CONFIG = {
-  tomoStage: "dev", //dev, prod
+  tomoStage: "dev", //dev/pre/prod
   name: "Tomo Social Wallet Demo",
   logo: "https://tomo.inc/favicon.svg",
 
